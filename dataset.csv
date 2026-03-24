@@ -1,0 +1,9 @@
+url,label
+https://www.google.com,0
+https://secure-login-bank.com/login.php,1
+https://paypal.com/verify,0
+http://suspicious-site.xyz/malware.exe,1
+https://amazon.deals.today/order,1
+https://microsoft.com/support,0
+http://phish.example.com/reset-password,1
+https://example.com,0
