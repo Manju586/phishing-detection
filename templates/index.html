@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,3 +35,41 @@
     </div>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detector</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body p-5">
+                        <h1 class="text-center mb-4 text-primary">🔍 Phishing URL Detector</h1>
+                        <form method="POST">
+                            <div class="mb-4">
+                                <label for="url" class="form-label fw-bold">Enter URL:</label>
+                                <input type="url" class="form-control form-control-lg" id="url" name="url" placeholder="https://example.com" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Detect Phishing</button>
+                        </form>
+                        
+                        {% if result %}
+                        <div class="mt-4 p-4 rounded-3 {% if 'Phishing' in result %}bg-danger bg-opacity-25 border-danger{% else %}bg-success bg-opacity-25 border-success{% endif %}">
+                            <h3 class="mb-2">{{ result }}</h3>
+                            <small class="text-muted">Analysis complete!</small>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+>>>>>>> 08fecdd54fbe2dc6ac947359e85d0c18a11c5aea
