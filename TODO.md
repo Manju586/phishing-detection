@@ -1,20 +1,10 @@
-# PDW Project Cleanup & Fix TODO
-
-**Status:** ✅ Complete! Errors fixed.
+# TODO: Resolve Terminal SyntaxError (Git Conflict Cleanup & App Fix)
 
 ## Steps:
-1. ✅ Removed unwanted files
-2. ✅ Fixed git conflicts
-3. ✅ Cleaned requirements.txt (encoding fixed)
-4. ✅ Added .gitignore (venv, pyc, data)
-5. ✅ Created venv/ virtual environment
-6. **Next (user run):**
-   - Activate: `venv\\Scripts\\activate`
-   - Install: `pip install -r requirements.txt`
-   - VSCode: Ctrl+Shift+P > "Python: Select Interpreter" > ./venv/Scripts/python.exe
-   - Reload window (Ctrl+R)
-   - Run: `python app.py`
+1. [x] Clean git conflict markers from `templates/index.html` (remove <<<<< HEAD, =======, >>>>>>> SHA).
+2. [x] Generate `model.pkl` by running `python model.py` (if missing).
+3. [x] Verify `app.py` clean and test `python app.py`.
+4. [x] Commit fixes: `git add templates/index.html && git commit -m "fix: resolve merge conflict" && git push`.
+5. [x] [COMPLETE] Run app successfully.
 
-Red errors gone after deps + interpreter select. App serves phishing detector!
-
-Project production-ready.
+Progress tracked here after each step.
